@@ -112,11 +112,13 @@ func NewClientFromEnvironment(config Config) (*Client, error) {
 
 	authnTokenFile := os.Getenv("CONJUR_AUTHN_TOKEN_FILE")
 	if authnTokenFile != "" {
+		fmt.Println("Hello")
 		return NewClientFromTokenFile(config, authnTokenFile)
 	}
 
 	authnToken := os.Getenv("CONJUR_AUTHN_TOKEN")
 	if authnToken != "" {
+		fmt.Println("Byeee")
 		return NewClientFromToken(config, authnToken)
 	}
 
