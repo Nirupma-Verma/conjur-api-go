@@ -6,8 +6,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/authn"
-	"github.com/cyberark/conjur-api-go/conjurapi/response"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/authn"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/response"
 )
 
 func (c *Client) RefreshToken() (err error) {

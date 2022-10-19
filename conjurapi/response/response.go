@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/logging"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/logging"
 )
 
 func readBody(resp *http.Response) ([]byte, error) {

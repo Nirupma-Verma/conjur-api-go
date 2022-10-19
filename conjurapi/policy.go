@@ -3,7 +3,7 @@ package conjurapi
 import (
 	"io"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/response"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/response"
 )
 
 // PolicyMode defines the server-sized behavior when loading a policy.

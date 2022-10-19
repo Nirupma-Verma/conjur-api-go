@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/authn"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/authn"
 )
 
 type RouterV5 struct {

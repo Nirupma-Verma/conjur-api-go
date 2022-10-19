@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/authn"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/authn"
 	"github.com/sirupsen/logrus"
 )
 

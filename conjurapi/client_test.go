@@ -3,7 +3,7 @@ package conjurapi
 import (
 	"testing"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/authn"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/authn"
 	"github.com/stretchr/testify/assert"
 )
 

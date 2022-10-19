@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/logging"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/logging"
 )
 
 type ConjurError struct {

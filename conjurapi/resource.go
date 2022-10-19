@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/cyberark/conjur-api-go/conjurapi/response"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/response"
 )
 
 type ResourceFilter struct {

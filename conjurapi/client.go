@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/authn"
+	"github.com/Nirupma-Verma/conjur-api-go/conjurapi/logging"
 	"github.com/bgentry/go-netrc/netrc"
-	"github.com/cyberark/conjur-api-go/conjurapi/authn"
-	"github.com/cyberark/conjur-api-go/conjurapi/logging"
 )
 
 type Authenticator interface {
@@ -112,14 +112,14 @@ func NewClientFromEnvironment(config Config) (*Client, error) {
 
 	authnTokenFile := os.Getenv("CONJUR_AUTHN_TOKEN_FILE")
 	if authnTokenFile != "" {
-		fmt.Println("Hello")
-		return NewClientFromTokenFile(config, authnTokenFile)
+		return nil, fmt.Errorf("In correct")
+		// return NewClientFromTokenFile(config, authnTokenFile)
 	}
 
 	authnToken := os.Getenv("CONJUR_AUTHN_TOKEN")
 	if authnToken != "" {
-		fmt.Println("Byeee")
-		return NewClientFromToken(config, authnToken)
+		return nil, fmt.Errorf("return in Conjur Auth")
+		// return NewClientFromToken(config, authnToken)
 	}
 
 	authnJwtServiceID := os.Getenv("CONJUR_AUTHN_JWT_SERVICE_ID")
